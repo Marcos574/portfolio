@@ -107,16 +107,16 @@ function showLista(lista, buttom = "all"){
         item.classList.remove('ativo');
     });
 
-    if(buttom == 'design'){
+    if(buttom == 'fronted'){
         lista[0].classList.add('ativo')
         lista[1].classList.add('ativo')
     }
-    if(buttom == 'graphic'){
+    if(buttom == 'backend'){
         lista[2].classList.add('ativo');
         lista[3].classList.add('ativo');
     }
 
-    if(buttom == 'website'){
+    if(buttom == 'fullstack'){
         lista[4].classList.add('ativo');
         lista[5].classList.add('ativo');
         lista[6].classList.add('ativo');
@@ -140,16 +140,16 @@ buttonGeral.forEach((item)=>{
         let currentButton = e.target;
         if(currentButton.classList.contains('all')){
             showLista(listaALL);
-        } if(currentButton.classList.contains('design')){
-            showLista(listaALL, "design")
+        } if(currentButton.classList.contains('fronted')){
+            showLista(listaALL, "fronted")
         }
 
-        if(currentButton.classList.contains('graphic')){
-            showLista(listaALL, "graphic")
+        if(currentButton.classList.contains('backend')){
+            showLista(listaALL, "backend")
         }
 
-        if(currentButton.classList.contains('website')){
-            showLista(listaALL, "website")
+        if(currentButton.classList.contains('fullstack')){
+            showLista(listaALL, "fullstack")
         }
 
         if(currentButton.classList.contains('all')){
